@@ -35,7 +35,6 @@ const Aplication = () => {
             }
         }
         return cookieValue; 
-        
     }
 
     const handleSubmit = async (e) => {
