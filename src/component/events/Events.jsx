@@ -2,16 +2,9 @@ import React, { useState, useEffect } from "react";
 import { SlArrowLeft } from "react-icons/sl";
 import "./Events.css";
 import axios from "axios";
-import photo from "../../assets/photo_.png"
 import { FaRegCalendarDays } from "react-icons/fa6";
 import { CgPin } from "react-icons/cg";
 import { IoMdTime } from "react-icons/io";
-
-// const data = [
-//   { id: 1,image:photo, title: "Middle Frontend разработчик", description: "Подробное описание для Middle Frontend.", text: "Наша компания осуществляет свою деятельность на территории Кыргызстана всей Центральной Азии, оказывая услуги по разработке, внедрению и дальнейшему." },
-//   { id: 2,image:photo, title: "Junior Frontend разработчик", description: "Описание для Junior Frontend.",text: "Наша компания осуществляет свою деятельность на территории Кыргызстана всей Центральной Азии, оказывая услуги по разработке, внедрению и дальнейшему." },
-//   { id: 3,image:photo, title: "Senior Frontend разработчик", description: "Описание для Senior Frontend.", text: "Наша компания осуществляет свою деятельность на территории Кыргызстана всей Центральной Азии, оказывая услуги по разработке, внедрению и дальнейшему." },
-// ];
 
 const Events = () => {
   const [selectedVacancy, setSelectedVacancy] = useState(null);
