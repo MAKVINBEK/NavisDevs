@@ -1,0 +1,130 @@
+.parent{
+    margin-top: 150px;
+}
+
+.min{
+    font-weight: 500;
+    background: linear-gradient(59.33deg, #D4151C 22.38%, #D35400 87.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.big{
+    font-weight: 500;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.block_contain{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 20px;
+    margin-top: 15px;
+}
+
+.block{
+    max-width: 365px;
+    /* cursor: pointer; */
+}
+
+.block img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    transition: .3s ease;
+    object-fit: cover;
+}
+
+.block div{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    transition: .3s ease;
+    border-bottom: 1px solid #0A0A0B;
+}
+
+.block:hover img{
+    transform: scale(1.04);
+}
+
+.block:hover div{
+    color: #D4151C;
+    border-bottom:1px solid #C35656;
+}
+
+.block:hover div span{
+    color: #C35656;
+}
+
+.block:hover div p{
+    color: #C35656;
+}
+
+.block div p{
+    font-weight: 500;
+    color: #ffffff;
+    transition: .3s ease;
+}
+
+.block div span{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    transition: .3s ease;
+}
+
+.button{
+    border: 1px solid  #C35656;
+    background: none;
+    width: 168px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.button:hover{
+    background: #D4151C;
+}
+
+.button span{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .block div p {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .block div span {
+        font-size: 20px;
+    }
+
+    .block{
+        max-width: 100%;
+    }
+
+    .block img{
+        height: auto;
+        border-radius: 12px;
+    }
+}

@@ -1,0 +1,96 @@
+.parent{
+    overflow: hidden;
+    position: relative;
+}
+
+.elip{
+    width: 462px;
+    height: 397px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(212, 61, 61, 0.42) -100%,
+    rgba(223, 68, 68, 0) 100%);
+    z-index: -1;
+    position: absolute;
+}
+
+.elip1{
+    left: 0;
+    top: 80%;    
+}
+
+.elip2{
+    left: 0;
+    top: 40%;
+}
+
+.elip3{
+    right: -8%;
+    top: 20%;
+}
+
+.red{
+    width: 100%;
+    padding: 100px 0;
+    border-radius: 20px;
+    background: linear-gradient(59.33deg, #D4151C 22.38%, #D35400 87.43%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.red p{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.red p span{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.clients div {
+    text-align: center;
+}
+
+.clients div span{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.clients div p{
+    font-size: 20px;
+    color: #b5b5b5;
+}
+
+@media (max-width: 650px){
+
+    .clients{
+        display: none;
+    }
+
+    .red{
+        padding: 50px 50px;
+    }
+
+    .red p span{
+        font-size: 26px;
+        
+    }
+
+    .red p{
+        font-weight: 500;
+        font-size: 16px;
+    }
+}

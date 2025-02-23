@@ -1,0 +1,176 @@
+.backgroundSlider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1.5s ease-in-out;
+}
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: #0A0A0B;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    opacity: 0; 
+    z-index:0; 
+    transition: opacity 1.5s ease-in-out;
+    object-fit: cover;
+  }
+  
+  .image.active {
+    opacity: 1; 
+    z-index: 1; 
+  }
+   .parent{ 
+    position: relative;
+  }
+  .content {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    z-index: 3;
+    color: #ffffff;
+  }
+
+  .min{
+    color: #b5b5b5;
+    font-size: 14px;
+  }
+
+  .content h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    flex-wrap: wrap;
+  }
+
+  .content h2 span{
+    background: linear-gradient(58.66deg, #D4151C 51.86%, #D35400 116.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+  }
+
+  .slidTitle{
+    color: #b5b5b5;
+    margin-top: 20px;
+  }
+
+  .slidTitleBig{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 60px;
+  }
+
+  .aplication{
+    display: flex;
+    gap: 15px;
+    max-height: 50px;
+    margin-top: 20px;
+  }
+
+  .elip{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top:150px;
+  z-index: 2;
+  color: white;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(212, 61, 61, 0.456) 0%, rgba(223, 68, 68, 0) 100%);
+  }
+
+  .aplication input{
+    width: 270px;
+    padding: 20px 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none ;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  .aplication button{
+    width: 146px;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(59.33deg, #D4151C 22.38%, #D35400 87.43%);
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    transition: .3s ease;
+    font-size: 14px;
+  }
+  .aplication button:hover{
+    opacity: .9;
+    cursor: pointer;
+  }
+ 
+  @media (max-width: 800px){
+
+    .aplication{
+      flex-direction: column;
+    }
+
+    .aplication button{
+      width: 270px;
+    }
+    .content h2{
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    .content{
+      top: 150px;
+    }
+  }
+
+  @media (max-width: 600px){
+
+    .content h2{
+      margin-top: 10px;
+      line-height: 30px;
+    }
+
+    .imageContainer{
+      height: 680px;
+    }
+
+    .content{
+      top: 125px;
+    }
+    .min{
+      font-size: 12px;
+    }
+
+    .content h2{
+      font-size: 28px;
+    }
+
+    .slidTitleBig{
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    .aplication button{
+      width: 100%;
+    }
+
+    .aplication input{
+      width: 100%;
+      padding: 15px 16px;
+    }
+  }

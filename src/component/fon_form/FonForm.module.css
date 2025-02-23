@@ -1,0 +1,39 @@
+.parent{
+    border: 1px solid #5C5C5C;
+    background:#FFFFFF0A;
+    border-radius: 20px;
+    padding: 38px 40px;
+    margin-top: 150px;
+}
+
+.min{
+    font-weight: 500;
+    background: linear-gradient(59.33deg, #D4151C 22.38%, #D35400 87.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.big{
+    font-weight: 500;
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 5px;
+    line-height: 40px;
+}
+
+@media (max-width: 600px){
+    .parent{
+        padding: 20px;
+        border-radius: 16px;
+    }
+    
+    .big{
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .min{
+        text-align: center;
+    }
+}

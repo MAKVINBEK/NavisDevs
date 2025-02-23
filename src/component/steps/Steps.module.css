@@ -1,0 +1,138 @@
+.content{
+    padding: 0 50px;
+    padding-top: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.color1{
+    width: 353px;
+    height: 257px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(212, 61, 61, 0.53) -100%,
+    rgba(223, 68, 68, 0) 100%);
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    z-index: -1;
+}
+
+.color2{
+    width: 412px;
+    height: 347px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(212, 61, 61, 0.53) -100%,
+    rgba(223, 68, 68, 0) 100%);
+    position: absolute;
+    right: -10%;
+    top: 10%;
+}
+
+.min{
+    font-weight: 500;
+    background: linear-gradient(59.33deg, #D4151C 22.38%, #D35400 87.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.big{
+    font-weight: 500;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px; 
+}
+
+.block{
+    width: 169px;
+    height: 64px;
+    border-radius: 50px;
+    background:#FFFFFF1A;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 25px;
+} 
+
+.block span{
+    padding: 5px;
+    min-width: 32px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block span img{
+    width: 100%;
+    height: auto;
+}
+
+.block p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@media (max-width: 800px){
+
+    .block{
+        width: 102px;
+        height: 45px;
+        gap: 6px;
+        padding-left: 10px;
+    }
+
+    .block span{
+        width: 30px;
+        height: 30px;
+    }
+
+    .block p{
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .content{
+        padding: 0 0;
+        padding-top: 100px;
+    }
+
+    .color1{
+        width: 250px;
+        height: 198px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(212, 61, 61, 0.53) -150%,
+    rgba(223, 68, 68, 0) 100%);
+    }
+    .color2{
+        width: 250px;
+        height: 198px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(212, 61, 61, 0.53) -150%,
+    rgba(223, 68, 68, 0) 100%);
+    }
+
+    .big{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 400px){
+    .parent{
+        gap: 15px 10px;
+    }
+
+    .block{
+        gap: 5px;
+    }
+}
