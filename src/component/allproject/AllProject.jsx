@@ -28,7 +28,7 @@ const AllProject = () => {
     return (
         <div className={css.parent}>
             <div className="container">
-                <p className={css.big}>Все проекты</p>
+                <h1 className={css.big}>Все проекты</h1>
                 <div className={css.block_contain}>
                     {articles.map((el) => (
                         <div key={el.id} className={css.block}>

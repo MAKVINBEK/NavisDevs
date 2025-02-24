@@ -53,9 +53,12 @@ function getCookie(name) {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
-  if (!formData.phone_number || formData.phone_number.length < 13) {
-    alert("Номер телефона должен содержать не менее 13 символов!");
-}
+  const phoneDigits = formData.phone_number.replace(/\D/g, '');
+    
+    if (phoneDigits.length < 13) {
+        alert("Введен не полный номер телефона!");
+        return;
+    }
   console.log("Отправляемые данные:", formData);
 
   const formDataToSend = new FormData();
@@ -137,7 +140,7 @@ useEffect(() => {
           <div onClick={resetVacancy} className={selectedVacancy ? "exts" : "lol"}>
             <SlArrowLeft />
           </div>
-          <h3 className={selectedVacancy ? "h3 h30" : "h3"}>Вакансии</h3>
+          <h1 className={selectedVacancy ? "h3 h30" : "h3"}>Вакансии</h1>
         </div>
 
         {!selectedVacancy && (

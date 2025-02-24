@@ -46,7 +46,7 @@ const Events = () => {
           <div onClick={resetVacancy} className={selectedVacancy ? "exts" : "lol"}>
             <SlArrowLeft />
           </div>
-          <h3 className={selectedVacancy ? "h3 h30" : "h3"}>Мероприятия</h3>
+          <h1 className={selectedVacancy ? "h3 h30" : "h3"}>Мероприятия</h1>
         </div>
 
         <div className="content">

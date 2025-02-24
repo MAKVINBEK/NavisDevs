@@ -11,10 +11,8 @@ const Aplication = () => {
         name: "",
         phone_number: "",
         message: ""
-    });
-
+    }); 
     const [status, setStatus] = useState("");
-
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -39,9 +37,12 @@ const Aplication = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!formData.phone_number || formData.phone_number.length < 13) {
-            alert("Номер телефона должен содержать не менее 13 символов!");
-        }
+        const phoneDigits = formData.phone_number.replace(/\D/g, '');
+    
+    if (phoneDigits.length < 13) {
+        alert("Введен не полный номер телефона!");
+        return;
+    }
         console.log("Отправляемые данные:", formData);
         try {
             const response = await axios.post("/api/consultation/", formData, {

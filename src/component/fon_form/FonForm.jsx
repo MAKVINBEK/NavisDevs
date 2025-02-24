@@ -6,7 +6,7 @@ const FonForm = () => {
         <div className="container">
             <div className={css.parent}>
                 <p className={css.min}>Заявка</p>
-                <p className={css.big}>Получить бесплатную консультацию</p>
+                <h1 className={css.big}>Получить бесплатную консультацию</h1>
                 <Aplication/>
             </div>
         </div>
