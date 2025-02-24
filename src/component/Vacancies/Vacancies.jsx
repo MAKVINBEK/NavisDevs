@@ -53,12 +53,14 @@ function getCookie(name) {
 
 const handleSubmit = async (e) => {
   e.preventDefault();
+    
   const phoneDigits = formData.phone_number.replace(/\D/g, '');
     
     if (phoneDigits.length < 13) {
         alert("Введен не полный номер телефона!");
         return;
-    }
+}
+
   console.log("Отправляемые данные:", formData);
 
   const formDataToSend = new FormData();
